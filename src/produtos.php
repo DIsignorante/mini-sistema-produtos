@@ -1,10 +1,8 @@
 <?php
-require_once 'auth.php';   // Requisito obrigatório
-require_once 'config.php'; // Requisito obrigatório
+require_once 'auth.php';
+require_once 'config.php';
 
-// --- LÓGICA DO CRUD ---
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Código de inserção/atualização (mantido igual ao anterior)
     $nome = trim($_POST['nome']);
     $descricao = trim($_POST['descricao']);
     $preco = filter_var($_POST['preco'], FILTER_VALIDATE_FLOAT);
@@ -39,12 +37,10 @@ if (isset($_GET['edit'])) {
     $produtoEdit = $stmt->fetch(PDO::FETCH_ASSOC);
 }
 
-// Consultas para alimentar os includes
 $categorias = $pdo->query("SELECT * FROM categorias ORDER BY nome")->fetchAll(PDO::FETCH_ASSOC);
 $produtos = $pdo->query("SELECT p.*, c.nome as cat_nome FROM produtos p JOIN categorias c ON p.categoria_id = c.id ORDER BY p.id DESC")->fetchAll(PDO::FETCH_ASSOC);
 
-// --- MONTAGEM DA INTERFACE COM INCLUDE ---
-require_once 'header.php'; // Cabeçalho principal
+require_once 'header.php'; 
 ?>
 
 <div class="row">
@@ -58,5 +54,5 @@ require_once 'header.php'; // Cabeçalho principal
 </div>
 
 <?php 
-require_once 'footer.php'; // Rodapé principal
+require_once 'footer.php';
 ?>
