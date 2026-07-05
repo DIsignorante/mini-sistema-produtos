@@ -2,7 +2,6 @@
 require_once 'auth.php';
 require_once 'config.php';
 
-// Criar / Editar
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $nome = trim($_POST['nome']);
     $id = $_POST['id'] ?? null;
@@ -20,7 +19,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 
-// Excluir
 if (isset($_GET['delete'])) {
     try {
         $stmt = $pdo->prepare("DELETE FROM categorias WHERE id = :id");
@@ -30,7 +28,6 @@ if (isset($_GET['delete'])) {
     }
 }
 
-// Listar
 $categorias = $pdo->query("SELECT * FROM categorias ORDER BY id")->fetchAll(PDO::FETCH_ASSOC);
 
 require_once 'header.php';
