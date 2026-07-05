@@ -1,9 +1,7 @@
-/* Importando a fonte Roboto (padrão em interfaces modernas e mobile) */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
-/* Variáveis de Cores e Estilos */
 :root {
-    --primary-color: #6200ea; /* Roxo profundo (estilo Material) */
+    --primary-color: #6200ea; 
     --primary-hover: #3700b3;
     --background-color: #f5f5f5;
     --surface-color: #ffffff;
@@ -20,7 +18,6 @@ body {
     color: var(--text-main);
 }
 
-/* Customização da Barra de Navegação */
 .navbar {
     background-color: var(--primary-color) !important;
     box-shadow: var(--elevation-2);
@@ -41,7 +38,6 @@ body {
     opacity: 0.8;
 }
 
-/* Customização dos Cards (Superfícies) */
 .card {
     border: none;
     border-radius: var(--radius);
@@ -62,7 +58,6 @@ body {
     padding: 1rem 1.5rem;
 }
 
-/* Customização de Botões */
 .btn {
     border-radius: var(--radius);
     font-weight: 500;
@@ -85,7 +80,6 @@ body {
     transform: translateY(-1px);
 }
 
-/* Tabelas */
 .table {
     border-collapse: separate;
     border-spacing: 0;
@@ -106,7 +100,6 @@ body {
     background-color: #f1f0f5;
 }
 
-/* Inputs de Formulário */
 .form-control, .form-select {
     border-radius: var(--radius);
     border: 1px solid #e0e0e0;
