@@ -1,5 +1,4 @@
 <?php
-// Inclusão dos ficheiros de controle e segurança no topo absoluto
 require_once 'auth.php';
 require_once 'header.php';
 ?>
@@ -12,6 +11,5 @@ require_once 'header.php';
 </div>
 
 <?php 
-// Inclusão do fechamento do layout
 require_once 'footer.php'; 
 ?>
