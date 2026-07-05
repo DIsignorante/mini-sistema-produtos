@@ -2,7 +2,7 @@
 
 Um mini sistema web responsivo para gerenciamento de produtos e categorias, desenvolvido com foco em boas práticas, segurança (PDO contra SQL Injection) e modularização de código. Todo o ambiente é conteinerizado utilizando Docker para facilitar a execução e o deploy.
 
-## 🚀 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 * **Backend:** PHP 8.2
 * **Banco de Dados:** PostgreSQL 15
@@ -10,7 +10,7 @@ Um mini sistema web responsivo para gerenciamento de produtos e categorias, dese
 * **Frontend:** HTML5, CSS3 (Customizado via variáveis CSS) e Bootstrap 5
 * **Segurança:** Hashes de senha (`password_hash`) e Consultas Parametrizadas (PDO)
 
-## ✨ Funcionalidades
+## Funcionalidades
 
 1. **Autenticação de Usuário:**
    * Tela de login segura com bloqueio rigoroso de páginas protegidas (via controle de sessões e cabeçalhos).
@@ -24,7 +24,7 @@ Um mini sistema web responsivo para gerenciamento de produtos e categorias, dese
 4. **Arquitetura Modular:**
    * Separação de regras de negócio e interface através da inclusão inteligente de arquivos (`require_once` e `include`).
 
-## 📁 Estrutura do Projeto
+## Estrutura do Projeto
 
 O projeto está organizado da seguinte maneira:
 
